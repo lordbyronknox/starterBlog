@@ -25,20 +25,18 @@
 <br>
 <h3>DEPLOYING</h3>
 <div>
-BEFORE MERGING
-On the branch for the feature:
-Tag the branch	-	git tag v0.0.3-1
-Push tag			-	git push origin tag v0.0.3-1 --no-verify
-Wait for dev deployment
-Check out changes on dev.fuse.me
-
-AFTER MERGING
-Check out main
-Pull latest changes
-Tag, e.g. v0.0.3
-Push tag
-Wait for prod deployment
-
+<h4>BEFORE MERGING</h4>
+<p>Tag the branch (not main)</p>
+<li>-	git tag v0.0.3-1</li>
+<li>-	git push origin tag v0.0.3-1 --no-verify</li>			
+<p>Wait for dev deployment</p>
+<br>
+<h3>AFTER MERGING</h3>
+<p>Check out main</p>
+<p>Pull latest changes</p>
+<li>Tag, e.g. v0.0.3</li>
+<li>Push tag</li>
+<p>Wait for prod deployment</p>
 		———
 **if deployment fails and new changes are pushed - you must re-tag the branch. (Eg.  git tag v0.0.3-2)
 </div>
