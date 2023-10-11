@@ -6,21 +6,19 @@
 </head>
 <li>
     <h3>Git</h3>
-    <pre>git clone -a                           [clone repo with all branches]<pre>					
-    <pre>git clone -b <remote-branch> <url>     [clone specific branch]<pre>
-    <pre>Git branch <new branch name>		    [create a new local branch]</pre>
+git clone -a                           [clone repo with all branches]				
+git clone -b <remote-branch> <url>     [clone specific branch]
+Git branch <new branch name>		   [create a new local branch]
+git checkout -b branch-3			   [create branch and switch to it]
+git branch -d <br>		               [delete a local branch]
+git reset —soft HEAD~1			       [delete most recent commit, keeping the work you’ve done]
+git reset —hard HEAD~1			       [delete most recent commit, along with current work you’ve done]
+git pull origin main				   [pull from the remote main branch. Make sure you are in local main]
+git merge --abort					   [abort a merge]
+git rebase —abort					   [abort a rebase]
+git push --no-verify				   [push, without running tests]
 
-
-
-git checkout -b branch-3			[create branch and switch to it]
-git branch -d <branch-name>		[delete a local branch]
-git reset —soft HEAD~1			[delete most recent commit, keeping the work you’ve done]
-git reset —hard HEAD~1			[delete most recent commit, along with current work you’ve done]
-git pull origin main				[pull from the remote main branch. Make sure you are in local main]
-git merge --abort					[abort a merge]
-git rebase —abort					[abort a rebase]
-git push --no-verify				[push, without running tests]
 (Note: to get out of the editor after ‘git tag’, hit escape, then ‘q!’)
-
+</li>
 </body>
 </html>
