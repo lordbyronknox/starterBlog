@@ -29,7 +29,7 @@
 <p>Tag the branch (not main)</p>
 <li>-	git tag v0.0.3-1</li>
 <li>-	git push origin tag v0.0.3-1 --no-verify</li>			
-<p>Wait for dev deployment</p>
+<p>Wait for test to complete. When successful merge the branch with main</p>
 <br>
 <h3>AFTER MERGING</h3>
 <p>Check out main</p>
@@ -37,9 +37,28 @@
 <li>Tag, e.g. v0.0.3</li>
 <li>Push tag</li>
 <p>Wait for prod deployment</p>
-		———
-**if deployment fails and new changes are pushed - you must re-tag the branch. (Eg.  git tag v0.0.3-2)
-</div>
 
+(Note: if deployment fails and new changes are pushed - you must re-tag the branch. (Eg.  git tag v0.0.3-2) )
+</div>
+<div>
+   <h3>Git merge conflicts:</h3>
+   <p>
+NB. To avoid merge conflicts!!!!    
+	Always make sure your local ‘main’ is up to date with ‘remote’ main. 
+	- go to local ‘main’ and pull from remote ‘main’.
+	Then create a new branch locally, and work on that new branch only.
+   </p>
+<p>If you have a merge conflict:</p>
+<p>- Got to local ‘main’ and pull</p>
+<li>git pull origin main</li>
+<p>- Switch to the local branch (that you want to merge main into)</p>
+<li>git checkout branch-3</li>
+<p>- Merge the branch with main.git merge main</p>
+<p>- Fix the conflicts: Open the files with conflicts and choose the changes to keep. ‘Current’ is the latest changes.‘Incoming’ is the change coming from the pull (I.e. the old code you usually don’t want)</p>
+<p>- Commit and push</p>
+
+
+ 
+</div>
 </body>
 </html>
